@@ -1,34 +1,143 @@
-body {
+* {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
 }
 
 .app {
-	background-color: #f1f3f5;
+	background-color: #f8f9fa;
 	min-height: 100vh;
+	display: grid;
 }
 
 .todo-app {
+	margin: 3rem auto;
+	border-radius: 5px;
 }
 
 .form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-size: 2rem;
+	color: #862e9c;
+	font-weight: 600;
+	margin-bottom: 2.5rem;
+	background-color: #f8f0fc;
+	padding: 2rem 4rem;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .form-row {
+	display: flex;
+	flex-direction: column;
+	min-width: 30rem;
+	gap: 5px;
 }
 
-.btn {
+input,
+button,
+select {
+	color: #862e9c;
+	font-family: inherit;
+	border: solid 1.5px transparent;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: 1.5rem;
 }
 
-.todo-list {
+input:focus,
+button:focus,
+select:focus {
+	outline: none;
+	border: 1.5px solid #e599f7;
 }
 
-.list {
+input[type='checkbox'] {
+	accent-color: #862e9c;
+	width: 1.5rem;
+	height: 1.5rem;
+	outline: none;
+}
+
+ul {
+	padding: 2rem 4rem;
+	height: 25rem;
+	overflow: scroll;
+	background-color: #f8f0fc;
 }
 
 .item {
+	border-bottom: 1px solid #862e9c;
+	padding-bottom: 0.5rem;
+}
+
+.item:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+.item li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.7rem;
+
+	color: #862e9c;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+.btn {
+	font-size: 1.5rem;
+	background-color: #862e9c;
+	padding: 0.7rem 2.2rem;
+	border-radius: 2rem;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.btn__close {
+	background-color: transparent;
+	font-size: 0.8rem;
+	cursor: pointer;
+	margin-left: 3rem;
+}
+
+.btn:hover {
+	background-color: #9c36b5;
+	transform: scale(1.05);
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	padding: 0rem 4rem;
+}
+
+/* UTILITIES */
+.checked {
+	text-decoration: line-through;
+	color: #868e96;
+}
+
+.red {
+	background-color: #fa5252;
+}
+
+.red:hover {
+	background-color: #e03131;
+	transform: scale(1.05);
 }
