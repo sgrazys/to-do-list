@@ -101,7 +101,7 @@ This is an example of how to list things you need to use the software and how to
 
 <br />
 
-### 🚀 Launch locally
+### Launch locally
 
 Would like to run this project locally? Open terminal and follow these steps:
 
