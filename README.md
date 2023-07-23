@@ -13,9 +13,7 @@
 <h3 align="center">React learning project | To-Do List</h3>
 
   <p align="center">
-    This is a simple To-Do List application built with React.  Users can add new tasks, mark completed tasks, remove tasks, and sort tasks based on different criteria. It uses React's useState() hook for managing the state of tasks and props for passing data between components.
-
-    Please Note: This project was developed solely for learning purposes and to gain hands-on experience with React's core concepts, such as useState() and props.
+    This is a simple To-Do List application built with React.  Users can add new tasks, mark completed tasks, remove tasks, and sort tasks based on different criteria. It uses React's useState() hook for managing the state of tasks and props for passing data between components. <br/> <br/> <em>Please Note: This project was developed solely for learning purposes and to gain hands-on experience with React's core concepts, such as useState() and props.</em> </p>
 
 <br />
 <a href="https://github.com/sgrazys/to-do-list"><strong>Explore the docs »</strong></a>
